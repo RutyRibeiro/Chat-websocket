@@ -2,7 +2,7 @@ from flask import Flask
 from flask_socketio import SocketIO, send
 import os
 
-# Use socketio = SocketIO(app, cors_allowed_origins='*')   to remove cors error 
+# Use socketio = SocketIO(app, cors_allowed_origins='*') to remove cors error 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecret'
 socketio = SocketIO(app, cors_allowed_origins='*')
